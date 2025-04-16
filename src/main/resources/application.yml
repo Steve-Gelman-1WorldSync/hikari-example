@@ -22,6 +22,15 @@ spring:
       hibernate:
         globally_quoted_identifiers: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    enable:
+      jdbc: true
+
 logging:
   level:
     com:
