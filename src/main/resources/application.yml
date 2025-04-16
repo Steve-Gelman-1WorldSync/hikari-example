@@ -2,10 +2,10 @@ spring:
   application:
     name: hikari-example
   datasource:
-    url: jdbc:h2:mem:hxdb;NON_KEYWORDS=user
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
     hikari:
       pool-name: HxHikariPool
       maximum-pool-size: 10
@@ -15,12 +15,12 @@ spring:
       connection-timeout: 30000
       leak-detection-threshold: 2000
       validation-timeout: 5000
-    jpa:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
       hibernate:
-        ddl-auto: update
-      properties:
-        hibernate:
-          globally_quoted_identifiers: true
+        globally_quoted_identifiers: true
 
 logging:
   level:
