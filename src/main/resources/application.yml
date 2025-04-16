@@ -2,7 +2,7 @@ spring:
   application:
     name: hikari-example
   datasource:
-    url: jdbc:h2:mem:hxdb
+    url: jdbc:h2:mem:hxdb;NON_KEYWORDS=user
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -19,4 +19,6 @@ spring:
       hibernate:
         ddl-auto: update
       show-sql: true
-
+      properties:
+        hibernate:
+          globally_quoted_identifiers=true
