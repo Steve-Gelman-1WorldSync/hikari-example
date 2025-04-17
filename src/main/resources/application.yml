@@ -41,9 +41,14 @@ management:
 
 logging:
   level:
-    com:
-      zaxxer:
-        hikari: TRACE
+    com.zaxxer.hikari.pool.*: DEBUG
+    com.zaxxer.hikari.HikariConfig: DEBUG
+    o.h.r.j.i.ResourceRegistryStandardImpl: TRACE
+    o.s.orm.jpa.JpaTransactionManager: TRACE
+    org.hibernate.internal.SessionImpl: TRACE
+    o.h.engine.jdbc.spi.SqlExceptionHelper: TRACE
+    java.sql.SQLTransientConnectionException: TRACE
+
     org:
       hibernate:
         SQL: INFO
