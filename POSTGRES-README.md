@@ -2,6 +2,9 @@
 A simple PostgreSQL database running in a Docker container. The run creates a persistent volume for the data, so the
 database is stable from one run to the next.
 
+**Note**: You no longer need to start and stop the Docker container manually. Running the application 
+will automatically start and stop the container.
+
 To run:
 ```text
 docker-compose up -d

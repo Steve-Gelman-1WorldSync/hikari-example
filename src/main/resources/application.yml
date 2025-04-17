@@ -21,6 +21,14 @@ spring:
     properties:
       hibernate:
         globally_quoted_identifiers: true
+  docker:
+    compose:
+      enabled: true
+      file: docker-compose.yml
+      start:
+        command: up
+      stop:
+        command: down
 
 management:
   endpoints:

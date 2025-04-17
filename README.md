@@ -2,8 +2,7 @@
 Small project to test settings for Postgres and HikariCP.
 
 ## To Run
-1. Start the database. See the [POSTGRES-README.md](POSTGRES-README.md) file.
-2. Start the application.
+Start the application. The Docker backend will start and stop with the application.
 
 ### To Add A User
 
