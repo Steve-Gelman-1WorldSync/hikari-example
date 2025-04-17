@@ -43,15 +43,15 @@ logging:
   level:
     com:
       zaxxer:
-        hikari: DEBUG
+        hikari: TRACE
     org:
       hibernate:
-        SQL: DEBUG
+        SQL: INFO
         orm:
           jdbc:
-            bind: TRACE
+            bind: INFO
       springframework:
         jdbc:
           core:
-            JdbcTemplate: DEBUG
-            StatementCreatorUtils: TRACE
+            JdbcTemplate: INFO
+            StatementCreatorUtils: INFO
