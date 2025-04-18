@@ -48,15 +48,7 @@ logging:
     org.hibernate.internal.SessionImpl: TRACE
     o.h.engine.jdbc.spi.SqlExceptionHelper: TRACE
     java.sql.SQLTransientConnectionException: TRACE
-
-    org:
-      hibernate:
-        SQL: INFO
-        orm:
-          jdbc:
-            bind: INFO
-      springframework:
-        jdbc:
-          core:
-            JdbcTemplate: INFO
-            StatementCreatorUtils: INFO
+    org.hibernate.SQL: INFO
+    org.hibernate.orm.jdbc.bind: INFO
+    org.springframework.jdbc.core.JdbcTemplate: INFO
+    org.springframework.jdbc.core.StatementCreatorUtils: INFO
